@@ -21,5 +21,5 @@ export default {
       c6: "#E9A547"
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-motion')], 
 } satisfies Config;
