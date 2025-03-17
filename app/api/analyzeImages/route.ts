@@ -29,8 +29,9 @@ export async function POST(req: NextRequest) {
           {
             role: "system",
             content:
-              "Analyze the provided images and extract exactly six distinct, concise descriptive terms." +
-              " Respond with only the six terms separated by commas, no numbering, no extra text.",
+              "Analyze the provided images and extract exactly six distinct, concise descriptive terms relating to personality traits. " +
+              "The terms should be really funny. " +
+              "Respond with only the six terms separated by commas, no numbering, no extra text.",
           },
           { role: "user", content: formattedImages },
         ],
